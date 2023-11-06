@@ -7,7 +7,7 @@ word = random.choice(word_list)
 
 def ask_for_input():
     while True:
-        guess = input("Enter a single letter: ")
+        guess = input("Enter a single letter: ").lower()
         
         if len(guess) == 1 and guess.isalpha():
             return guess
